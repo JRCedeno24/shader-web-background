@@ -77,6 +77,11 @@ header h1 a {
   }
 }
 
+svg {
+  height: 80%;
+  width: 80%;
+}
+
 section {
   background: rgba(0, 0, 0, .4);
   font-size: 1.6rem;
