@@ -727,23 +727,38 @@ this.j);b.framebufferTexture2D(b.FRAMEBUFFER,b.COLOR_ATTACHMENT0,b.TEXTURE_2D,th
     @keyframes crecimiento {
       from{
         transform: scale(0%);
+        transform: rotateZ(0deg)
       }
       to{
-        transform:scale(200%)
+        transform:scale(200%);
+        transform: rotateZ(360deg)
+        
       }
 
     }
 
+    @keyframes floatIn {
+  0% {
+    transform: rotate(720deg) scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
 
+.animated-svg {
+  animation: floatIn 2s ease-in-out;
+}
 
     #central {
       position: absolute;
-      animation-name: crecimiento;
-      animation-duration: 8s;
-      
-      
+      animation-name: floatIn;      
+      animation-duration: 6s; 
 
     }
+
   </style>
 </head>
 <body>
