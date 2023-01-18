@@ -723,6 +723,34 @@ this.j);b.framebufferTexture2D(b.FRAMEBUFFER,b.COLOR_ATTACHMENT0,b.TEXTURE_2D,th
       0%,20%,100% { fill: #ffffff; }
       7%,10% { fill: #0000ff; }
     }
+
+    @keyframes crecimiento {
+      from{
+        transform: scale(0%);
+      }
+      to{
+        transform:scale(200%)
+      }
+
+      @keyframes girar {
+      from{
+        transform: scale(0%);
+      }
+      to{
+        transform:scale(200%)
+      }
+    }
+
+
+
+    #central {
+      position: absolute;
+      animation-name: crecimiento;
+      animation-duration: 8s;
+      
+      
+
+    }
   </style>
 </head>
 <body>
@@ -732,7 +760,7 @@ this.j);b.framebufferTexture2D(b.FRAMEBUFFER,b.COLOR_ATTACHMENT0,b.TEXTURE_2D,th
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
       <!-- Created with Inkscape (http://www.inkscape.org/) -->
       
-      <svg
+      <svg id="central"
          version="1.1"
          id="svg2"
          xml:space="preserve"
